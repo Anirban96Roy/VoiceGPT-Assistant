@@ -93,7 +93,7 @@ def text_to_audio(x):
     engine.runAndWait()
 
 if __name__ == '__main__':
-    text_to_audio("Hello sir  I am Baymax How can i help you?")
+    text_to_audio("Hello sir, I am Baymax. How can i help you?")
     while True:
         data1 = audio_to_text().lower()
         sites = [["youtube", "https://www.youtube.com/"], ["google", "https://www.google.com/"]]
@@ -113,7 +113,7 @@ if __name__ == '__main__':
             text_to_audio(f"Sir the time is {time}")
         elif "mail" in data1:
             text_to_audio(f"Opening mail sir")
-            outlook_path = r"C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE"
+            outlook_path = r"Give the file path here."
             os.startfile(outlook_path)
         elif "ai".lower() in data1:
             ai_to_text(q=data1)
